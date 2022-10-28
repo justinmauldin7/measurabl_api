@@ -117,3 +117,41 @@ GET /api/v1/sites/1
   "portfolio_id": 1
 }
 ```
+
+##### Get All Sites for a Specific Portfolio:
+You will need to know and pass in the id of the portfolio you are looking to find all the sites for
+into the URL for a successful response.
+
+```
+GET /api/v1/sites?portfolio_id=1
+
+[
+  {
+    "id": 1,
+    "site_name": "Larimer Plaza",
+    "site_address": "123 Main St. Denver, CO 80203",
+    "building_type": "office building",
+    "created_at": "2022-10-28T23:36:04.655Z",
+    "updated_at": "2022-10-28T23:36:04.655Z",
+    "portfolio_id": 1
+  },
+  {
+    "id": 2,
+    "site_name": "Shops at Fashion Valley",
+    "site_address": "7007 Friars Rd. San Diego, CA 92108",
+    "building_type": "mall",
+    "created_at": "2022-10-28T23:36:04.657Z",
+    "updated_at": "2022-10-28T23:36:04.657Z",
+    "portfolio_id": 1
+  },
+  {
+    "id": 3,
+    "site_name": "Mission Valley Outlets",
+    "site_address": "2640 Camino Del Rio San Diego, CA 92108",
+    "building_type": "outlet mall",
+    "created_at": "2022-10-28T23:36:04.659Z",
+    "updated_at": "2022-10-28T23:36:04.659Z",
+    "portfolio_id": 1
+  }
+]
+```
