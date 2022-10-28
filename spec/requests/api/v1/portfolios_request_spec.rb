@@ -11,7 +11,27 @@ describe 'Portfolios API' do
     get '/api/v1/portfolios'
 
     expect(response).to be_successful
-    expect(Portfolio.count).to eq(5)
+
+    portfolios = JSON.parse(response.body, symbolize_names: true)
+
+    expect(portfolios.count).to eq(5)
+
+    portfolios.each do |portfolio|
+      expect(portfolio).to have_key(:id)
+      expect(portfolio[:id]).to be_an(Integer)
+
+      expect(portfolio).to have_key(:portfolio_name)
+      expect(portfolio[:portfolio_name]).to be_a(String)
+
+      expect(portfolio).to have_key(:company_name)
+      expect(portfolio[:company_name]).to be_a(String)
+
+      expect(portfolio).to have_key(:company_size)
+      expect(portfolio[:company_size]).to be_an(Integer)
+
+      expect(portfolio).to have_key(:country)
+      expect(portfolio[:country]).to be_a(String)
+    end
   end
 
   it "can get a single portfolio" do
