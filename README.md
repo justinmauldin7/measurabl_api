@@ -78,3 +78,20 @@ GET /api/v1/portfolios
   }
 ]
 ```
+
+##### Get a Single Portfolio:
+You will need to know and pass in the id of the portfolio you are looking to find into the URL for a successful response.
+
+```
+GET /api/v1/users/1
+
+{
+  "id": 1,
+  "portfolio_name": "United States Fund",
+  "company_name": "ACME Inc.",
+  "company_size": 1000,
+  "country": "United States",
+  "created_at": "2022-10-28T20:28:20.707Z",
+  "updated_at": "2022-10-28T20:28:20.707Z"
+}
+```
