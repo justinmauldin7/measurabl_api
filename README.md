@@ -23,7 +23,7 @@ Things you may want to cover:
 
 * ...
 
-## Dog Days API Endpoints:
+## Measurabl API Endpoints:
 
 ##### Get All Portfolios:
 
