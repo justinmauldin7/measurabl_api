@@ -11,3 +11,5 @@ Portfolio.create(portfolio_name: "Canada Fund", company_name: "Maple Leaf Holdin
 Portfolio.create(portfolio_name: "Mexico Fund", company_name: "Mexico Corp.", company_size: 200, country: "Mexico")
 Portfolio.create(portfolio_name: "Brazil Fund", company_name: "Brazilian LLC", company_size: 100, country: "Brazil")
 Portfolio.create(portfolio_name: "Panama Fund", company_name: "Panama Non-Profit", company_size: 500, country: "Panama")
+
+Site.create(site_name: "Larimer Plaza", site_address: "123 Main St. Denver, CO 80203", building_type: "office building")
