@@ -25,7 +25,8 @@ Things you may want to cover:
 
 ## Measurabl API Endpoints:
 
-##### Get All Portfolios:
+### PORTFOLIOS:
+##### -Get All Portfolios:
 
 ```
 GET /api/v1/portfolios
@@ -79,7 +80,7 @@ GET /api/v1/portfolios
 ]
 ```
 
-##### Get a Single Portfolio:
+##### -Get a Single Portfolio:
 You will need to know and pass in the id of the portfolio you are looking to find into the URL for a successful response.
 
 ```
