@@ -11,6 +11,6 @@ describe 'Portfolios API' do
     get '/api/v1/portfolios'
 
     expect(response).to be_successful
-    expect(Portfolio.size).to eq(5)
+    expect(Portfolio.count).to eq(5)
   end
 end
