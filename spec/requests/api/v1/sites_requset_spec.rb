@@ -14,6 +14,9 @@ describe 'Sites API' do
     expect(site).to have_key(:id)
     expect(site[:id]).to eq(site_1.id)
 
+    expect(site).to have_key(:portfolio_id)
+    expect(site[:portfolio_id]).to eq(portfolio_1.id)
+
     expect(site).to have_key(:site_name)
     expect(site[:site_name]).to be_a(String)
     expect(site[:site_name]).to eq(site_1.site_name)
