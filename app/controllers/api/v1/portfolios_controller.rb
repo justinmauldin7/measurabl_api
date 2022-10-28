@@ -4,4 +4,7 @@ class Api::V1::PortfoliosController < ApplicationController
 
     render json: portfolios
   end
+
+  def show
+  end
 end
