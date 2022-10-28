@@ -13,5 +13,5 @@ Portfolio.create(portfolio_name: "Brazil Fund", company_name: "Brazilian LLC", c
 Portfolio.create(portfolio_name: "Panama Fund", company_name: "Panama Non-Profit", company_size: 500, country: "Panama")
 
 Site.create(portfolio: portfolio_1, site_name: "Larimer Plaza", site_address: "123 Main St. Denver, CO 80203", building_type: "office building")
-Site.create(portfolio: portfolio_1, site_name: "Shops at Fasion Valley", site_address: "7007 Friars Rd. San Digo, CA 92108", building_type: "mall")
-Site.create(portfolio: portfolio_1, site_name: "Mission Valley Outlets", site_address: "2640 Camino Del Rio San Digo, CA 92108", building_type: "outlet mall")
+Site.create(portfolio: portfolio_1, site_name: "Shops at Fashion Valley", site_address: "7007 Friars Rd. San Diego, CA 92108", building_type: "mall")
+Site.create(portfolio: portfolio_1, site_name: "Mission Valley Outlets", site_address: "2640 Camino Del Rio San Diego, CA 92108", building_type: "outlet mall")
