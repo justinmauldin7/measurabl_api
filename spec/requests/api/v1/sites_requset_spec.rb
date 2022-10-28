@@ -2,7 +2,8 @@ require 'rails_helper'
 
 describe 'Sites API' do
   it "can get a single site" do
-    site_1 = Site.create(site_name: "Larimer Plaza", site_address: "123 Main St. Denver, CO 80203", building_type: "office building")
+    portfolio_1 = Portfolio.create(portfolio_name: "United States Fund", company_name: "ACME Inc.", company_size: 1000, country: "United States")
+    site_1 = Site.create(portfolio: portfolio_1, site_name: "Larimer Plaza", site_address: "123 Main St. Denver, CO 80203", building_type: "office building")
 
     get "/api/v1/sites/#{site_1.id}"
 
