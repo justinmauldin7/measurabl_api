@@ -17,7 +17,7 @@ describe 'Sites API' do
     expect(site[:site_name]).to be_a(String)
     expect(site[:site_name]).to eq(site_1.site_name)
 
-    expect(site).to have_key(:company_name)
+    expect(site).to have_key(:site_address)
     expect(site[:site_address]).to be_a(String)
     expect(site[:site_address]).to eq(site_1.site_address)
 
