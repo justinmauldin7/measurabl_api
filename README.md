@@ -96,3 +96,24 @@ GET /api/v1/users/1
   "updated_at": "2022-10-28T20:28:20.707Z"
 }
 ```
+
+
+
+### SITES:
+--------------------
+##### -Get a Single Site:
+You will need to know and pass in the id of the site you are looking to find into the URL for a successful response.
+
+```
+GET /api/v1/sites/1
+
+{
+  "id": 1,
+  "site_name": "Larimer Plaza",
+  "site_address": "123 Main St. Denver, CO 80203",
+  "building_type": "office building",
+  "created_at": "2022-10-28T23:36:04.655Z",
+  "updated_at": "2022-10-28T23:36:04.655Z",
+  "portfolio_id": 1
+}
+```
