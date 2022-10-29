@@ -118,7 +118,7 @@ GET /api/v1/sites/1
 ```
 
 ##### Get All Sites for a Specific Portfolio:
-You will need to know and pass in the id of the portfolio you are looking to find all the sites for
+You will need to know and pass in the id of the portfolio you are looking to find all the sites
 into the URL for a successful response.
 
 ```
@@ -176,8 +176,7 @@ GET /api/v1/spaces/1
 ```
 
 ##### Get All Spaces for a Specific Site:
-You will need to know and pass in the id of the site you are looking to find all the spaces for
-into the URL for a successful response.
+You will need to know and pass in the id of the site you are looking to find all the spaces into the URL for a successful response.
 
 ```
 GET /api/v1/spaces?site_id=1
