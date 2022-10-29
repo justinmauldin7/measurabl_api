@@ -5,6 +5,8 @@ describe 'Stats API' do
     portfolio_1 = Portfolio.create(portfolio_name: "United States Fund", company_name: "ACME Inc.", company_size: 1000, country: "United States")
 
     site_1 = Site.create(portfolio: portfolio_1, site_name: "Larimer Plaza", site_address: "123 Main St. Denver, CO 80203", building_type: "office building")
+             Site.create(portfolio: portfolio_1, site_name: "Shops at Fashion Valley", site_address: "7007 Friars Rd. San Diego, CA 92108", building_type: "mall")
+             Site.create(portfolio: portfolio_1, site_name: "Mission Valley Outlets", site_address: "2640 Camino Del Rio San Diego, CA 92108", building_type: "outlet mall")
 
     Space.create(site: site_1, space_name: "Suite A", property_type: "commercial", space_size: 4000, monthly_price: 400000)
     Space.create(site: site_1, space_name: "Suite B", property_type: "commercial", space_size: 3000, monthly_price: 200000)
