@@ -214,3 +214,38 @@ GET /api/v1/spaces?site_id=1
   }
 ]
 ```
+
+
+### STATS:
+##### Get All Spaces Average Square Footage & Total Square Footage for a Specific Site:
+You will need to know and pass in the id of the site you are looking to find all the spaces square footage stats into the URL for a successful response.
+
+```
+GET /api/v1/stats?site_id=1
+
+{
+  "site_id": 1,
+  "site_name": "Larimer Plaza",
+  "total_square_footage": 9000,
+  "average_suare_footage": 3000
+}
+```
+
+##### Get All Spaces Average Square Footage & Total Square Footage for a Specific Portfolio:
+You will need to know and pass in the id of the portfolio you are looking to find all the spaces square footage stats into the URL for a successful response.
+
+```
+GET /api/v1/stats?portfolio_id=1
+
+{
+  "portfolio_id": 1,
+  "portfolio_name": "United States Fund",
+  "sites": [
+            "Larimer Plaza",
+            "Shops at Fashion Valley",
+            "Mission Valley Outlets"
+            ],
+  "total_square_footage": 9000,
+  "average_suare_footage": 3000
+}
+```
