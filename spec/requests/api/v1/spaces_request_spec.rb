@@ -67,7 +67,6 @@ describe 'Spaces API' do
 
       expect(space).to have_key(:space_size)
       expect(space[:space_size]).to be_a(Integer)
-      expect(space[:space_size]).to eq(space_1.space_size)
 
       expect(space).to have_key(:monthly_price)
       expect(space[:monthly_price]).to be_a(Integer)
