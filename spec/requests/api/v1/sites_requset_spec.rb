@@ -47,22 +47,19 @@ describe 'Sites API' do
 
     sites.each do |site|
       expect(site).to have_key(:id)
-      expect(site[:id]).to eq(site_1.id)
+      expect(site[:id]).to be_an(Integer)
 
       expect(site).to have_key(:portfolio_id)
       expect(site[:portfolio_id]).to eq(portfolio_1.id)
 
       expect(site).to have_key(:site_name)
       expect(site[:site_name]).to be_a(String)
-      expect(site[:site_name]).to eq(site_1.site_name)
 
       expect(site).to have_key(:site_address)
       expect(site[:site_address]).to be_a(String)
-      expect(site[:site_address]).to eq(site_1.site_address)
 
       expect(site).to have_key(:building_type)
       expect(site[:building_type]).to be_a(String)
-      expect(site[:building_type]).to eq(site_1.building_type)
     end
   end
 end
