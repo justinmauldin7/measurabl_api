@@ -3,6 +3,7 @@ require 'rails_helper'
 describe Portfolio do
   describe 'relationships' do
     it { should have_many(:sites) }
+    it { should have_many(:spaces) }
   end
 
   describe 'validations' do
