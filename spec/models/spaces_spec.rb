@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Site do
+describe Space do
   describe 'validations' do
     it { should validate_presence_of(:space_name) }
     it { should validate_presence_of(:property_type) }
