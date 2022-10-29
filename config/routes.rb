@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :portfolios, only: [:index, :show]
       resources :sites, only: [:index, :show]
       resources :spaces, only: [:index, :show]
+      resources :stats, only: [:index]
     end
   end
 end
