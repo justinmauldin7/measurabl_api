@@ -100,7 +100,6 @@ GET /api/v1/users/1
 
 
 ### SITES:
---------------------
 ##### -Get a Single Site:
 You will need to know and pass in the id of the site you are looking to find into the URL for a successful response.
 
@@ -152,6 +151,67 @@ GET /api/v1/sites?portfolio_id=1
     "created_at": "2022-10-28T23:36:04.659Z",
     "updated_at": "2022-10-28T23:36:04.659Z",
     "portfolio_id": 1
+  }
+]
+```
+
+
+
+### SPACES:
+##### -Get a Single Space:
+You will need to know and pass in the id of the space you are looking to find into the URL for a successful response.
+
+```
+GET /api/v1/spaces/1
+
+{
+  "id": 1,
+  "space_name": "Suite C",
+  "property_type": "commercial",
+  "space_size": 2000,
+  "monthly_price": 100000,
+  "created_at": "2022-10-29T02:42:25.358Z",
+  "updated_at": "2022-10-29T02:42:25.358Z"
+}
+```
+
+##### Get All Spaces for a Specific Site:
+You will need to know and pass in the id of the site you are looking to find all the spaces for
+into the URL for a successful response.
+
+```
+GET /api/v1/spaces?site_id=1
+
+[
+  {
+    "id": 1,
+    "space_name": "Suite A",
+    "property_type": "commercial",
+    "space_size": 4000,
+    "monthly_price": 400000,
+    "created_at": "2022-10-29T03:12:30.838Z",
+    "updated_at": "2022-10-29T03:12:30.838Z",
+    "site_id": 1
+  },
+  {
+    "id": 2,
+    "space_name": "Suite B",
+    "property_type": "commercial",
+    "space_size": 3000,
+    "monthly_price": 200000,
+    "created_at": "2022-10-29T03:12:30.841Z",
+    "updated_at": "2022-10-29T03:12:30.841Z",
+    "site_id": 1
+  },
+  {
+    "id": 3,
+    "space_name": "Suite C",
+    "property_type": "commercial",
+    "space_size": 2000,
+    "monthly_price": 100000,
+    "created_at": "2022-10-29T03:12:30.842Z",
+    "updated_at": "2022-10-29T03:12:30.842Z",
+    "site_id": 1
   }
 ]
 ```
