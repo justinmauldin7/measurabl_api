@@ -39,10 +39,10 @@ describe 'Sites API' do
 
     get '/api/v1/sites', params: { portfolio_id: portfolio_1.id }
 
-    expect(response).to be_successful
 
     sites = JSON.parse(response.body, symbolize_names: true)
 
+    expect(response).to be_successful
     expect(sites.count).to eq(3)
 
     sites.each do |site|

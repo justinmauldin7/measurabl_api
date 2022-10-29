@@ -10,10 +10,10 @@ describe 'Portfolios API' do
 
     get '/api/v1/portfolios'
 
-    expect(response).to be_successful
 
     portfolios = JSON.parse(response.body, symbolize_names: true)
 
+    expect(response).to be_successful
     expect(portfolios.count).to eq(5)
 
     portfolios.each do |portfolio|
