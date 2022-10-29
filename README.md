@@ -1,29 +1,34 @@
-# README
+# Justin Mauldin's Measurabl API
+My Rails API successfully accomplishes the baseline requirements set forth in the take-home prompt/instructions, with none of the stretch requirements attempted due to time constraints.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built With
 
-Things you may want to cover:
+* [Ruby - Version 2.4.5](https://ruby-doc.org/core-2.4.5/)
+* [Rails - Version 5.2.8.1](https://guides.rubyonrails.org/v5.2/)
+* [RSpec](http://rspec.info/documentation/)
+* [ShouldaMatchers](https://matchers.shoulda.io/)
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+My Rails API will run (seed data included) via the desired steps in the take-home prompt/instructions.
 
-* Configuration
+1) Gets a copy of the repository  
+2) Run "bundle exec rails db:setup" (seed data is included)  
+3) Run "bundle exec rails server"  
+4) Run "bundle exec rails routes" to see the available routes  
+5) Use a client to hit the endpoints found in prior step
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Testing
+My API was developed using TDD via Rspec & Shoulda Matchers & every API endpoint & model is fully tested & all tests are passing.
 
 ## Measurabl API Endpoints:
+Below are the requested baseline requirements API endpoints with their routes & params need to access them as well as what to expect the data format to be from the response.  
+
+The API endpoints are broken down into 4 sections:
+-Portfolios  
+-Sites  
+-Spaces  
+-Stats
 
 ### PORTFOLIOS:
 ##### -Get All Portfolios:
