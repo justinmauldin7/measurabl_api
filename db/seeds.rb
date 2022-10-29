@@ -15,3 +15,5 @@ Portfolio.create(portfolio_name: "Panama Fund", company_name: "Panama Non-Profit
 Site.create(portfolio: portfolio_1, site_name: "Larimer Plaza", site_address: "123 Main St. Denver, CO 80203", building_type: "office building")
 Site.create(portfolio: portfolio_1, site_name: "Shops at Fashion Valley", site_address: "7007 Friars Rd. San Diego, CA 92108", building_type: "mall")
 Site.create(portfolio: portfolio_1, site_name: "Mission Valley Outlets", site_address: "2640 Camino Del Rio San Diego, CA 92108", building_type: "outlet mall")
+
+Space.create(space_name: "Suite C", property_type: "commercial", space_size: 2000, monthly_price: 100000)
