@@ -89,7 +89,7 @@ GET /api/v1/portfolios
 You will need to know and pass in the id of the portfolio you are looking to find into the URL for a successful response.
 
 ```
-GET /api/v1/users/1
+GET /api/v1/portfolios/1
 
 {
   "id": 1,
