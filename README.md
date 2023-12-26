@@ -254,3 +254,80 @@ GET /api/v1/stats?portfolio_id=1
   "average_suare_footage": 3000
 }
 ```
+
+
+===================================================================
+# Measurabl API Take-home Test Prompt:
+Hi! Thanks for your interest in working at Measurabl. This take-home test will help assess your skills in building an API using Ruby on Rails and
+provide a good starting point for discussion in a potential follow-up interview.
+
+
+Some requirements are left intentionally open-ended. Make an implementation decision and go with it. If you feel there are trade-offs worth
+noting, please write them in the README.md at the root of your repository.
+
+
+Please spend between no fewer than 2 hours and no more than 8 hours on this take-home test; they do not need to be consecutive hours. There
+is a baseline requirement and two stretch requirements. The stretch requirements are optional. If you take them on, feel free to implement or
+make notes about a potential implementation.
+
+## Delivering Solution
+The solution should be delivered privately as a git repository (not publicly on GitHub). The repo can be zipped and emailed to your contact at
+Measurabl. If it is too large, please provide a link using a file sharing service (i.e. Google Drive, Dropbox, etc.)
+
+
+The solution should be manually testable if someone takes the following steps:
+
+1) Gets a copy of the repository
+2) Runs bundle exec rails db:setup (seed data should be included)
+3) Runs bundle exec rails server
+4) Runs bundle exec rails routes to see the available routes
+5) Uses a client to hit the endpoints found in prior step
+6) Any additional setup or notes should be included in the README.md
+
+*Reminder: The repository should be delivered privately.*
+
+## Background
+The core customer for Measurabl is an owner or operator of commercial real estate. There are a few fundamental concepts that we have in our
+system to serve these customers: Portfolios, Sites, and Spaces
+
+## Portfolio
+This is a collection of sites (aka buildings) that are owned by an entity. For example, ACME, Inc. may have a North American Fund that holds 250
+buildings in the US and Canada. The concept of that holding is a Portfolio.
+
+## Site
+Often, sites are referred to as Buildings, but a site may technically contain more than one building. An example may be a mini-mall with the main
+strip and two standalone stores. As such, we term each entity as a Site even if most of them are a single building.
+
+## Space
+A site is divided into Spaces, even if it is only 1 space for the site. An example of a site with multiple spaces is a mixed-use building, with the
+following spaces:
+
+- 2 Commercial Office Spaces
+- 4 Residential Units
+- 1 Common Area (e.g. foyer and stairs)
+
+## Baseline Requirements
+Create an API in Ruby on Rails that serves the following information:
+
+**1) Portfolios:**
+  - A list of portfolios in the system
+  - Detailed information about a single portfolio
+
+**2) Sites:**
+- A list of sites for a given portfolio
+- Detailed information about a single site
+
+**3) Spaces:**
+- A list of spaces for a given site
+- Detailed information about a single space
+- Statistics of square footage of spaces for a site (e.g. Total, Average)
+- Statistics of square footage of spaces for a portfolio (e.g. Total, Average)
+
+## Stretch Requirement
+Add authentication to the API, so the endpoints cannot be hit without valid credentials.
+
+## Super Stretch Requirement
+Add authorization to the API, so credentials are linked to portfolios and the responses reflect that link/authorization.
+
+Thanks! That's It! Thanks again for your interest. As a reminder, the two stretch requirements are optional. Review the Delivering Solution section for
+instructions on sending your work to Measurabl.
